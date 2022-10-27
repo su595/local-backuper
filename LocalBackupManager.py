@@ -46,7 +46,7 @@ class CustomWidgets(QWidget):
         box.exec()
 
 # these get put in the init qt for convenience
-DEFAULT_YML_PATHS = ['/home/yannick/IMPORTANT FILES.yml', '/home/yannick/git-repos/MyPython/important projects/test.yml', '/home/yannick/Desktop/smartphone_backup.yml']
+DEFAULT_YML_PATHS = []
 DEFAULT_YML_PATH_IN_BOX = '/home/yannick/IMPORTANT FILES.yml'
 
 MAIN_QT_WIDTH = 800
@@ -173,7 +173,7 @@ class LocalBackupManager():
         self.ymlSizeLabel = QLabel("\n")
         self.layout.addWidget(self.ymlSizeLabel)
 
-        self.backupLocationButton = QPushButton("A Zip-File will be created at the selected location")
+        self.backupLocationButton = QPushButton("Select the backup location")
         self.layout.addWidget(self.backupLocationButton)
 
         self.backupLocationLabel = QLabel("\n")
@@ -412,7 +412,7 @@ class LocalBackupManager():
             return out
 
         # prints the dict nicely formatted with all is layers using a recursive function (ohh fancy)
-        out = " ~~~ File at {0} ~~~\n\n".format(self.configPath)
+        out = " ~~~ Yml-dict at {0} ~~~\n\n".format(self.configPath)
 
         return getDictStrRec(out, self.ymlDict) + "\n~~~~~~~~~"
 
