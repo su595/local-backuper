@@ -5,10 +5,12 @@ You can organize files and folders in a yml-dict and then copy them at once to a
 
 ## How to use
 When you run `LocalBackupManager.py` a dialog asks you for the filepath of the yml file. You need to create one manually.
+
 ![initial dialog](/assets/initQT.png)
 
 In the main interface, you can add files and folders to the list which is rendered below. To remove a file or folder from the list, just select it again.
 You can exclude certain files in a folder from being copied by appending them to the "blacklist".
+
 ![main interface](/assets/mainQT.png)
 
 After you selected a backup destination you can start the copying process, given that there's enough space. It can take a long time!
