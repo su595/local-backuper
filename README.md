@@ -22,8 +22,9 @@ In `LocalBackupManager.py`, you can specify `DEFAULT_YML_PATH_IN_BOX` and `DEFAU
 There's surely a lot of bugs and weird behavious, but for my purposes it works. 
 
 ## Kyudai Programming Excercise Final Project
-This is my final project for the "Introduction to Python" course. I use various concepts we learned in the course. I promise that I actually programmed everything myself, with only minor help from my brother and one function ([`myCopyTree`](https://github.com/su595/local-backuper/blob/66de9e209498601a361dca82850da41ac09e438d/LocalBackupManager.py#L460)) that I copied from the internet.
-
+This is my final project for the "Introduction to Python" course. I use various concepts we learned in the course. I promise that I actually programmed everything myself, with only minor help from my brother and one function [`myCopyTree`](https://github.com/su595/local-backuper/blob/66de9e209498601a361dca82850da41ac09e438d/LocalBackupManager.py#L460) that I copied from the internet.
 
 As learned in week 6 of this course, I used various if-statements featuring both [complex](https://github.com/su595/local-backuper/blob/66de9e209498601a361dca82850da41ac09e438d/LocalBackupManager.py#L473) and [simple](https://github.com/su595/local-backuper/blob/66de9e209498601a361dca82850da41ac09e438d/LocalBackupManager.py#L97) conditions throughout this project.
+I made heavy use of dictionnaries that we learned in week 11, in order to organize the list of files that are to be backed up onto the removable storage device.
+
 I also use different programming techniques, such as recursive functions. Refer to [`printYmlDict()`](https://github.com/su595/local-backuper/blob/66de9e209498601a361dca82850da41ac09e438d/LocalBackupManager.py#L387)
